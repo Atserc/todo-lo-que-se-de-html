@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta chareset = "UTF-8">
+	<title>Mi info sobre HTML</title>
+  <link rel="icon" type="image/png" href="imgs/icono.png">
+</head>
+
+	<header>
+		<h1><u>Toda mi info sobre HTML</u></h1>
+
+    <nav>
+      <a href="index.html">Página principal</a> /
+      <a href="InfoTextos.html">Más sobre formato de texto</a> /
+      <a href="InfoImagenes.html">Más sobre imagenes</a> /
+      <a href="InfoAdicional.html">Información Adicional</a> /
+    </nav>
+</header>
+
+<br>
+<hr>
+<br><br><br><br>
+
+<body>
+
+  <h2><u>Conceptos Basicos</u></h2>
+
+<br><br>
+
+  <div>
+    <h4>Estructura</h4>
+    <p>-HTML5 introdujo nuevos elementos de base estructural, los cuales son:<br>
+    <dl>
+      <dt>&lt;header&gt;</dt>
+      <dd>Es usado para indentificar el inicio de la página, artículo, sección, u otro segmento de una página.</dd>
+      <dt>&lt;nav&gt;</dt>
+      <dd>Identifica una sección principal, referida a la navegación dentro de esta, incluyendo links a cada parte de la página.</dd>
+      <dt>&lt;article&gt;</dt>
+      <dd>Es usado para idenfiticar una sección independiente, y con contenido autónomo.</dd>
+      <dt>&lt;section&gt;</dt>
+      <dd>Es usado para identificar un grupo de contendio agrupado por una misma temática.</dd>
+      <dt>&lt;aside&gt;</dt>
+      <dd>Su contendio, como por ejemplo las barras laterales, inserciones, o breves explicaciónes, esta relacionado al contenido cercano, siendo lo de aside, un complemento para este.</dd>
+      <dt>&lt;footer&gt;</dt>
+      <dd>Identifica el final de página, artículo, sección, u otro segmento de una página</dd>
+    </dl>
+
+  </div>
+
+  <br><br><br>
+
+  <div>
+    <h4>Interlineado</h4>
+    <p>Para dar un salto de linea, se utiliza el elemento &lt;br&gt;.<br>
+    Támbien se puede utilizar &lt;hr&gt; para generar una linea divisioria</p>
+  </div>
+
+  <br><br><br>
+
+  <div>
+    <h4>Hiperlinks</h4>
+    <p>
+      Los enlaces que apuntan a otras páginas del mismo sitio web tendrán una ruta relativa, que no incluye el dominio (.com, .org, .edu, etc.) en el valor del atributo href.<br>
+      La vinculación a otros sitios web fuera del actual requiere una ruta absoluta, donde el valor del atributo href debe incluir el dominio completo. <br>
+      Ejemplos:<br>
+    </p>
+      <ul>
+        <li>Relative Path &#8594; &lt;a href="about.html"&gt;About&lt;/a&gt;</li>
+        <li>Absolute Path &#8594; &lt;a href="http://www.google.com/"&gt;Google&lt;/a&gt;</li>
+      </ul>
+      <br>
+    <p>
+      Para crear un enlace de correo electrónico, el valor del atributo href debe comenzar con mailto: seguido de la dirección de correo electrónico a la que se debe enviar el correo electrónico.<br>
+      Ejemplo: &lt;a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you"&gt; Envíeme un correo electrónico &lt;/a&gt;.  
+    </p>
+    <br>
+    <p>
+      Para activar la acción de abrir un enlace en una nueva ventana, use el atributo de destino con un valor de _blank. El atributo de destino determina exactamente dónde estará el enlace
+      mostrado, y el valor _blank especifica una nueva ventana. <br> Ejemplo: &lt;a href="http://shayhowe.com/" target="_blank"&gt; Shay Howe &lt;/a&gt;
+    </p>
+  </div>
+
+
+
+<!--
+
+we can place an id attribute value of top on the <body> element. Now we can create an anchor element with an href attribute value of #top, pound sign and all, to link to 
+the beginning of the <body> element. Example: 
+<body id="top">
+  ...
+  <a href="#top">Back to top</a>
+  ...
+</body>
+
+-->
+
+<br><br><br><br><br>
+
+<footer>
+  <small>&copy; Sin Copyright</small>
+</footer>
+
+
+</body>
+
+</html>
+
+
+<!--
+
+Listas: ordenadas <ol> </ol> y desordenadas <ul></ul>  (con cada item entre <li></li>)
+
+Se puede usar el elemento value (<li value="numero">) para especificicar un numero especifico desde el cual se comenzara a contar en uno de los valores de una ol
+Description lists: Description lists are used to outline multiple terms and their descriptions. Se utiliza <dl> y cada item con <dt> y <dd> en sus descripciones. Ejemplo:
+<dl>
+  <dt>study</dt>
+  <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd>
+  <dt>design</dt>
+  <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made</dd>
+  <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object</dd>
+  <dt>business</dt>
+  <dt>work</dt>
+  <dd>A person's regular occupation, profession, or trade</dd>
+</dl>
+Las listas pueden ir una dentro de otra.
+
+List Styling:
+
+none                        No list item
+disc                        A filled circle
+circle                      A hollow circle
+square                      A filled square
+decimal                     Decimal numbers
+decimal-leading-zero        Decimal numbers padded by initial zeros
+lower-roman                 Lowercase roman numerals
+upper-roman                 Uppercase roman numerals
+lower-greek                 Lowercase classical Greek
+lower-alpha / lower-latin   Lowercase ASCII letters
+upper-alpha / upper-latin   Uppercase ASCII letters
+armenian                    Traditional Armenian numbering
+georgian                    Traditional Georgian numbering
+
+
+Agregar imagenes: se usa el elemento <img>, junto al elemento src="url imagen" + un alt="alternative text" / Los formatos suelen ser gif, jpg, and png / Ejemplo: 
+<img src="dog.jpg" alt="Un perro negro, marron y blanco, usando un pañuelo naranja">
+Se utiliza css para elegir el tamaño de la imagen. Ejemplo: 
+img {
+  height: 200px;
+  width: 200px;
+}
+
+Existen algunos elementos para estructurar mejor la tabla, estos son: <caption>, <thead>, <tbody>, y <tfoot>.
+El elemento <caption> le da un titulo a la tabla.
+El contenido de las tablas se dividen en multiples grupos, incluyendo un titulo, un cuerpo y un pie de table, estos ayuidan a organizar estructuralmente la tabla.
+Despues del <thead>, vienen el <tbody> y por ultimo el <tfoot>.. Mientras el thead le proporciona un titulo, el tbody deberia incluir los datos primarios, mientras que el 
+tfoot contendria un pequeño resumen, resutados, o informacion complementaria de la informacion principal de la tabla.
+
+
+Los atributos <colspan> y <rowspan> se utilizan para combinar espacios de la tabla. El atributo colspan se usa para unir una celda a través de varias columnas, mientras que
+el atributo rowspan se utiliza para una sola celda a través de multiples filas. Cada atributo acepta un valor integro que indicara cuantos espacios se uniran (si no se indica,
+el valor predeterminado sera 1). Ejemplo:
+<tr>
+   <td colspan="3">Subtotal</td>
+   <td>$135.36</td>
+</tr>
+
+
+Video: <video></video> puede incluir atributos como height, width, autoplay, controls[importante], loop.
+Audio: <audio></audio> puede incluir los mismos atributos que el video, mas buffered, muted, volume.
+En ambos casos se puede agregar "#t=" detras de la referencia al archivo para determinar que se debe reproducir. Acompañado por 5, 25 (del segundo 5 al 25) / ,39 (solo hasta el segundo 39) / ,1:38:45 (hasta
+la hora marcada) / 42 (empezando del segundo 42, en adelante).
+
+<adress> se utiliza para los que ingresen con accesibilidad, para encontrar una dirección rápidamente. (En vez de escribirlo manualmente con italica)
+<blockquote> se utiliza para citas, pone automaticamente las comillas, y si ponemos el nombre detras, ayuda a que la pagina aparezca en motores de busqueda.
+<details> se usa con <summary> para generar una lista expandible, cuando el usuario da click en la flecha que se generará.
+<abbr> se utiliza para abreviaciones. Por ejemplo, escribe Mon. para Monday.
+<span> es el anterior por defecto de texto plano.
+<code> Le da formato particular, y sirve para marcar explicaciones relacionadas al código.
+<sub> y <sup> se utiliza para subir o bajar de la línea algún caractér. Como por ejemplo cuando se quiere escribir una potencia, o los números de un átomo.
+
+Elementos que necesitan JavaScript: <button>, <metter>, <progress>.
+
+-->
