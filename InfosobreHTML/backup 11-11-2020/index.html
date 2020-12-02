@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta chareset = "UTF-8">
+	<title>Mi info sobre HTML</title>
+  <link rel="icon" type="image/png" href="imgs/icono.png">
+</head>
+
+<body>
+	<header>
+		<h1>
+  <a href="index.html">Toda mi info sobre HTML</a>
+</h1>
+
+    <nav>
+    <a href="index.html">Página principal</a>
+    <a> / </a>
+    <a href="InfoImagenes.html">Más sobre imagenes</a>
+    <a> / </a>
+    <a href="Info2.html">Información Secundaria</a>
+    <a> / </a>
+    <a href="Info3.html">Información adicional</a>
+    <a> / </a>
+  </nav>
+</header>
+
+<br><br><br>
+
+<section>
+  <h2><u>Conceptos Basicos</u></h2>
+  <h4>headings</h4>
+  <p>
+    The primary heading of a page or section should be marked up with an &lt;h1&gt; element, and subsequent headings should use &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt; elements as necessary. <br>
+    Headings help to quickly break up content and establish hierarchy, and they are key identifiers for users reading a page. They also help search engines to index and determine the content on a page.
+  </p>
+</section>
+
+<!--
+  The primary heading of a page or section should be marked up with an <h1> element, and subsequent headings should use <h2>, <h3>, <h4>, <h5>, and <h6> elements as necessary.
+Headings help to quickly break up content and establish hierarchy, and they are key identifiers for users reading a page. They also help search engines to index and 
+determine the content on a page.
+-->
+
+<br><br><br>
+
+<footer>
+  <small>&copy; Sin Copyright</small>
+</footer>
+
+
+</body>
+
+</html>
+
+
+<!--
+Headings are often followed by supporting paragraphs. Paragraphs are defined using the <p> block-level element. Paragraphs can appear one after the other, adding 
+information to a page as desired. 
+To make text bold and place a strong importance on it, we’ll use the <strong> inline-level element. There are two elements that will bold text for us: the <strong> and 
+<b> elements. To italicize text, thereby placing emphasis on it, we’ll use the <em> inline-level element. The <em> element is used semantically to place a stressed emphasis 
+on text; it is thus the most popular option for italicizing text. The other option, the <i> element, is used semantically to convey text in an alternative voice or tone, 
+almost as if it were placed in quotation marks.
+
+HTML5 introduced new structurally based elements, including the <header> (is used to identify the top of a page, article, section, or other segment of a page), 
+<nav> (identifies a section of major navigational links on a page), <article> (is used to identify a section of independent, self-contained content), <section>  ( is used 
+to identify a thematic grouping of content), <aside> (holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content 
+surrounding it), and <footer> (identifies the closing or end of a page, article, section, or other segment of a page) elements.
+
+Links pointing to other pages of the same website will have a relative path, which does not include the domain (.com, .org, .edu, etc.) in the href attribute value. Linking 
+to other websites outside of the current one requires an absolute path, where the href attribute value must include the full domain. Examples:
+Relative Path -> <a href="about.html">About</a>
+Absolute Path -> <a href="http://www.google.com/">Google</a>
+To create an email link, the href attribute value needs to start with mailto: followed by the email address to which the email should be sent.
+Example: <a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
+To trigger the action of opening a link in a new window, use the target attribute with a value of _blank. The target attribute determines exactly where the link will be 
+displayed, and the _blank value specifies a new window. Example: <a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+
+we can place an id attribute value of top on the <body> element. Now we can create an anchor element with an href attribute value of #top, pound sign and all, to link to 
+the beginning of the <body> element. Example: 
+<body id="top">
+  ...
+  <a href="#top">Back to top</a>
+  ...
+</body>
+
+<br>
+Listas: ordenadas <ol> </ol> y desordenadas <ul></ul>  (con cada item entre <li></li>)
+Imagenes: <img src="imagen.jpg" alt="texto descriptivo en caso que no aparezca la imagen">
+
+-->
